@@ -9,6 +9,38 @@ $(document).click(function(loc) {
 This is empty on purpose! Your code to build the resume will go here.
  */
 
+/*
+Navigation Start
+ */
+jQuery(function(menu){
+    	$('#menu-btn').click(function(){
+    		$ ('.responsive-menu').slideToggle();
+    	})
+
+  	})
+ /*
+Navigation Ends
+ */
+
+// Page scrolling feature. Please note I used this: "https://css-tricks.com/snippets/jquery/smooth-scrolling"
+
+jQuery(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
+
+// Page scrolling feature ENDS
+
 var bio = {
 	"name": "Paul Constable",
 	"role": "Front-end Web Developer",
@@ -38,15 +70,14 @@ var bio = {
 		var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
 		var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
 		var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-		var formattedBlog= HTMLblog.replace("%data%", bio.contacts.blog);
-		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+		var formattedLinkedIn = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
+
 		//Contact info - append/prepend technique
-		$("#footerContacts").append(formattedMobile);
-		$("#footerContacts").append(formattedEmail);
 		$("#footerContacts").append(formattedTwitter);
 		$("#footerContacts").append(formattedGithub);
-		$("#footerContacts").append(formattedBlog);
-		$("#footerContacts").append(formattedLocation);
+		$("#footerContacts").append(formattedLinkedIn);
+		$("#footerContacts1").append(formattedMobile);
+		$("#footerContacts1").append(formattedEmail);
 		//Mugshot/bio desc replace technique
 		var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 		var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);

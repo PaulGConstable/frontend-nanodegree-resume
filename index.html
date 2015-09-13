@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-
-<!--
-This is an HTML document. It contains information about how elements in the website
-are arranged. In other words, it describes the layout of a website.
-
-I can't wait to see the resumes you put together!
-
-Cameron Pittman, Udacity Course Developer
--->
-
 <!--
 The <head> of a website generally links to important resources the page will
 need to load. You'll see a lot of <link>s to CSS files for styles and
@@ -41,40 +31,75 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <!-- More on helper.js in the class -->
   <script src="js/helper.js"></script>
-
-  <!--
-  Uncomment the <script> tag below when you're ready to add an interactive
-  Google Map to your resume!
-  -->
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
+  <link href="http://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
 </head>
 <body>
+<!-- Navigation -->
+  <nav class="navigation">
+    <div class="top_menu">
+      <ul class="nav_list">
+        <li class="nav_item"><a class= "navigation-a" href="#experience">Experience</a></li>
+        <li class="nav_item"><a class= "navigation-a" href="#education">Education</a></li>
+        <li class="nav_item"><a class= "navigation-a" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mobile-nav">
+      <div class="menu-btn" id="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+        </svg>
+        <div class="responsive-menu">
+          <ul class="menu_list">
+            <li class="menu_item"><a class="menu-a" href="#experience">Experience</a></li>
+            <li class="menu_item"><a class="menu-a" href="#education">Education</a></li>
+            <li class="menu_item"><a class="menu-a" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- Navigation Ends -->
   <div id="main">
+<!-- Header Starts -->
     <div id="header" class="center-content clear-fix">
       <ul id="topContacts" class="flex-box"></ul>
     </div>
+<!-- Header Ends -->
+<!-- Work Expeerience/ Project Starts -->
     <div style="clear: both;"></div>
-    <div id="workExperience" class="gray">
+    <a name="experience"></a>
+    <div id="workExperience">
       <h2>Work Experience</h2>
     </div>
     <div id="projects">
       <h2>Projects</h2>
     </div>
-    <div id="education" class="gray">
+<!-- Work Expeerience/Projects Ends-->
+<!-- Education Starts-->
+    <a name="education"></a>
+    <div id="education">
       <h2>Education</h2>
     </div>
+<!-- Education Ends-->
+<!-- Map Starts-->
     <div id="mapDiv">
       <h2>Where I've Lived and Worked</h2>
     </div>
-    <div id="lets-connect" class="dark-gray">
-      <h2 class="orange center-text">Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box">
+<!-- Map Ends-->
+<!-- Footer Starts-->
+    <a name="contact"></a>
+    <div id="lets-connect" class="dark-blue">
+      <h2 class="navy center-text">Let's Connect</h2>
+        <ul id="footerContacts" class="flex-box-social">
+      </ul>
+      <ul id="footerContacts1" class="flex-box">
       </ul>
     </div>
   </div>
-
+<!-- Footer Ends-->
   <!--
   The next line tells the browser where to download the JavaScript file you'll be
   writing. In resumeBuilder.js, you'll be writing code that builds the resume

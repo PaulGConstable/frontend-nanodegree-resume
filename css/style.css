@@ -11,7 +11,8 @@ h5,
 h6 {
   padding:0;
   margin:0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
 }
 
 .clear-fix {
@@ -26,7 +27,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #fff;
   line-height: 48px;
   display: inline;
 }
@@ -34,22 +35,21 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #2c3e50;
   line-height: 29px;
   padding: 10px;
 }
 
 h3 {
-  font-style: italic;
   font-size: 20px;
-  color: #000;
+  color: #2c3e50;
   line-height: 22px;
 }
 
 h4 {
   font-weight: bold;
   font-size: 14px;
-  color: #4a4a4a;
+  color: #fff;
   line-height: 17px;
 }
 
@@ -60,6 +60,71 @@ h5 {
   padding:10px 5%;
 
 }
+
+/*
+*
+* Top Level Navigation
+*
+*/
+
+.navigation {
+  z-index: 99;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  color: #ffffff;
+  text-align: right;
+  min-height: 60px;
+  /* Adds shadow to the bottom of the bar */
+  -webkit-box-shadow: 0px 0px 40px 0px #000000;
+  -moz-box-shadow: 0px 0px 40px 0px #000000;
+  box-shadow: 0px 0px 40px 0px #000000;
+  /* Adds the transparent background */
+  background-color: #2c3e50;
+  color: #2c3e50;
+}
+
+.nav_list {
+  width: 100%;
+  padding: 0;
+}
+
+.nav_item {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 20%;
+  min-width: 48px;
+  line-height: 10px;
+  padding: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.navigation-a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0 1.5em 0 1.5em;
+
+}
+
+.nav_item:last-of-type {
+  margin-right: 18%;
+
+}
+
+.navigation-a:hover {
+  color: #18bc9c;
+}
+
+.menu-btn{
+  display: none;
+}
+
+/*
+*
+* Top Level Navigation ENDS
+*
+*/
 
 
 .date-text {
@@ -100,35 +165,46 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #2c3e50;
 }
 
-.orange {
-  background-color: #f5ae23;
+.navy {
+  background-color: #2c3e50;
 }
 
-.orange-text {
-  color: #f5ae23;
-}
-
-.white-text {
-  font-weight: bold;
+#lets-connect h2 {
   color: #fff;
 }
 
-.gray {
-  background-color: #f3f3f3;
-  padding-bottom: 10px;
+.white-text {
+
+  color: #fff;
+}
+
+.aqua {
+  background-color: #18bc9c;
+  margin-bottom: 10px;
   clear:both;
 }
 
-.dark-gray {
-  background-color: #4a4a4a;
+.dark-blue {
+  background-color: #2c3e50;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #18bc9c;
+  padding-top: 66px;
+}
+
+.flex-box-social {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .flex-box {
@@ -136,8 +212,9 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
   padding: 10px;
+  padding-bottom: 2%;
+  justify-content: center;
 }
 
 .center-content {
@@ -166,6 +243,40 @@ span {
   text-align: center;
 }
 
+#map {
+  z-index: 0;
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+  padding: 0 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+#education {
+  padding-bottom: 3%;
+}
+
+[class*="zocial-"]:before {
+  color: #fff;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  width: 2em;
+  padding: 1em;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.social-a:hover {
+  background-color: #18bc9c;
+  border-radius: 50%;
+}
+
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
@@ -181,29 +292,83 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
+/*Navigation Starts*/
+
+.menu-btn {
+  display: list-item;
+  min-height: 60px;
+}
+
+.menu-btn div {
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  top: 100%;
+  margin-top: -0.50em;
+  vertical-align: middle;
+  z-index: 99;
+  /* Here I can animate the drawer*/
+  transition: transform 0.3s ease;
+}
+
+.menu-btn svg {
+  margin-right: 1em;
+  margin-top: 0.5em;
+  padding: 0.3em;
+  width: 32px;
+  fill: white;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.responsive-menu{
+  display: none;
+  width: 400px;
+}
+
+.menu_list {
+  position: absolute;
+  right: 0;
+  top: 0.5em;
+  background-color: #2c3e50;
+  color: #2c3e50;
+}
+
+.menu_item {
+  display: list-item;
+  list-style: none;
+  text-align: center;
+  min-width: 300px;
+  min-height: 48px;
+}
+
+.menu-a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu-a:hover {
+  color: #18bc9c;
+}
+
+.top_menu{
+  display: none;
+}
+
+/*Navigation Ends*/
 
   #lets-connect {
     margin-top: 10%;
   }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
+
+  .welcome-message,
+  #skills-h3,
+  #skills,
+  .biopic,
+  #mapDiv {
     display: none;
+
   }
-}
-
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
-}
 
 @media only screen and (min-width: 750px) {
   #skills-h3,

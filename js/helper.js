@@ -13,15 +13,16 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr/>';
+var HTMLheaderRole = '<span class="white-text"><br/>%data%</span>';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text">%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
-var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
+var HTMLcontactGeneric = '<li class="flex-item"><span class="white-text">%contact%</span><span class="white-text">%data%</span></li>';
+var HTMLtwitter = '<li class="flex-item"><a href="#" class="zocial-twitter social-a"></a></li>';
+var HTMLgithub = '<li class="flex-item"><a href="#" class="zocial-github social-a"></a></li>';
+var HTMLlinkedin = '<li class="flex-item"><a href="#" class="zocial-linkedin social-a"></a></li>';
+var HTMLmobile = '<li class="flex-item"><span class="white-text">mobile:</span><span class="white-text">%data%;</span></li>';
+var HTMLemail = '<li class="flex-item"><span class="white-text">email:</span><span class="white-text">%data%</span></li>';
+// var HTMLblog = '<li class="flex-item"><span class="white-text">blog</span><span class="white-text">%data%</span></li>';
+// var HTMLlocation = '<li class="flex-item"><span class="white-text">location</span><span class="white-text">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
@@ -47,7 +48,7 @@ var HTMLschoolURL = '<a href="%data%">';
 var HTMLschoolName = '%data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
-var HTMLschoolMajor = '<em><br>%data%</em>';
+var HTMLschoolMajor = '<p><br>%data%</p>';
 
 var HTMLonlineCourses = '<h3>Online Courses</h3>';
 var HTMLonlineURL = '<a href="%data%">';
