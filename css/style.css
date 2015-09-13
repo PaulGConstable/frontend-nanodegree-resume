@@ -316,7 +316,7 @@ span {
   margin-top: 0.5em;
   padding: 0.3em;
   width: 32px;
-  fill: white;
+  fill: #fff;
   border-radius: 50%;
   border: 2px solid #fff;
 }
@@ -369,10 +369,3 @@ span {
     display: none;
 
   }
-
-@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
-  }
-}
