@@ -27,8 +27,8 @@ var HTMLemail = '<li class="flex-item"><span class="white-text">email:</span><sp
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
+var HTMLskillsStart = '<h3 id="skills-h3" class="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
+var HTMLskills = '<li class="flex-item skills"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
@@ -57,7 +57,7 @@ var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 
 var internationalizeButton = '<button>Internationalize</button>';
-var googleMap = '<div id="map"></div>';
+var googleMap = '<div id="map" class="map"></div>';
 
 
 /*
