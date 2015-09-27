@@ -50,11 +50,10 @@ var bio = {
 		'github': 'PaulGConstable',
 		'twitter': '@PaulGConstable',
 		'location': 'Crayford',
-		'blog': '#'
 	},
-	'welcomeMessage': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque diam eu pulvinar blandit.',
+	'welcomeMessage':'BAFTA-winning Online Assistant Producer currently commissioning engaging TV programme support (video and digital) for All 4. Additionally, a recent graduate of the Front-End Nanodegree with Udacity with expertise in developing client-side mobile responsive web applications using HTML, CSS and JavaScript. I have a strong background in JavaScript’s core concepts including object-oriented programming patterns, and developing performant applications that focus on the critical rendering path and 60 frames per second.',
 	'skills': [
-		'Social Media', 'Content Strategy', 'HTML', 'Digital Media', 'CMS'
+		'Social Media Management', 'Content Strategy', 'HTML', 'CSS', 'JavaScript'
 	],
 	'bioPic': 'images/paul-c.jpg',
 
@@ -67,12 +66,13 @@ var bio = {
 		/** Contact info replace technique  */
 		var formattedMobile = HTMLmobile.replace('%data%', bio.contacts.mobile);
 		var formattedEmail = HTMLemail.replace('%data%', bio.contacts.email);
-		var formattedTwitter = HTMLtwitter.replace('%data%', bio.contacts.twitter);
-		var formattedGithub = HTMLgithub.replace('%data%', bio.contacts.github);
-		var formattedLinkedIn = HTMLlinkedin.replace('%data%', bio.contacts.linkedin);
+		var formattedTwitter = HTMLtwitter;
+		var formattedGithub = HTMLgithub;
+		var formattedLinkedIn = HTMLlinkedin;
+		var formattedPortfolio = HTMLPortfolio;
 		/** Contact info - append/prepend technique  */
 		$('#footerContacts').append(formattedTwitter, formattedGithub, formattedLinkedIn);
-		$('#footerContacts1').append(formattedMobile, formattedEmail);
+		$('#footerContacts1').append(formattedEmail, formattedMobile, formattedPortfolio);
 		/** Mugshot/bio desc replace technique  */
 		var formattedBioPic = HTMLbioPic.replace('%data%', bio.bioPic);
 		var formattedWelcomeMsg = HTMLwelcomeMsg.replace('%data%', bio.welcomeMessage);
@@ -160,36 +160,30 @@ var work = {
 			'title': 'Assistant Online Producer',
 			'location': 'London, UK',
 			'dates': 'December 2014 - Present',
-			'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque diam eu pulvinar blandit.'
+			'description':['<ul class="job-desc"><li>Produced video that has generated over a 100,000 views online for brands such as Father Ted;</li><li>Successfully coordinated and project managed delivery of 30 programmes on to VOD on All 4 – working with production companies, commercial sponsors and internal stakeholders;</li><li>Produced, managed and curated content (text, video, images) across All 4 on brands such as Big Fat Quiz Of The Year, Virtually Famous, Hunted, Made in Cheslea  and Take Part;</li><li>Created social promotions and campaigns for priority shows that trended number 1 in the UK, which involved managing social media chats on platforms such as Periscope and Twitter, with key talent including Kevin Mchale for Virtually Famous and Sharon Rooney for My Mad Fat Diary</li><li>Coordinated the whole life cycle, including selecting a developer, to build the All 4 Games website;</li><li>Conduct the competition process and communications with winners for Online – ensuring they all run correctly and follow the compliance process. To date I have managed over 60 online competitions;</li><li>Optimised pages/sections on All 4 using HTML, CSS and Java Script;</li><li>Contribute on Channel 4’s, E4’s and other key brand social media accounts;</li><li>Social media editor for C4TakePart and manager of the process for shows looking for contributors;</li><li>Analyse Adobe Omniture reports and work with Audience Insight to inform editorial judgement;</li><li>Understanding of Channel 4’s CMS and platforms; PIPE, EDAM , TeamSite, MediaBin, Brightcove.</li></ul>'
+			],
 		},
 		{
 			'employer':'Channel 4 Televison',
 			'title': 'Online Production Coordinator',
 			'location': 'London, UK',
 			'dates': 'October 2012 - December 2014',
-			'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque diam eu pulvinar blandit.'
+			'description': '<ul class="job-desc"><li>Produced, managed and curated content across C4.com and multiple social platforms;</li><li>Helped deliver the process for online video content across over 200 priority programmes;</li><li>Administered the production schedule and priorities for the team, sharing with the business;</li><li>Engaged with, managed and cultivated the user community for Channel 4 Take Part on social media;</li><li>Conducted the competition process and communications with winners for Online;</li><li>Handled public announcement requests for broadcast, liaising with the Marketing and Presentation;</li><li>Implemented a system to help migrate 2,000 programme brands to a new CMS;</li><li>Analysed daily Adobe Omniture reports to enhance editorial judgement of content on All 4.</li></ul>'
 		},
 		{
 			'employer':'Channel 4 Televison',
 			'title': 'Paralympics Online Assistant',
 			'location': 'London, UK',
 			'dates': 'March 2011 - October 2012',
-			'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque diam eu pulvinar blandit.'
+			'description': '<ul class="job-desc"><li>Produced digital content for London 2012, which won a BAFTA for Digital Creativity;</li><li>Social editor for C4Paralympics during the live London 2012 games. Over 130,000 fans at its peak;</li><li>Administered stand-alone projects such as putting subtitles onto over 400 video assets;</li><li>Social Media Editor of C4Athletics in the build-up to the World Athletics Championships 2011;</li><li>Analysed social media performance and managed a digital filing system to back-up over 3,000 assets;</li><li>Researched and shared content to strengthen the live broadcast of the Paralympics. Example here;</li></ul>'
 		},
 		{
 			'employer':'John Lewis PLC',
-			'title': 'PR & Marketing Assistant',
-			'location': 'Greenhithe, Kent, UK',
-			'dates': 'June 2010 - March 2011',
-			'description': 'Liaised with local press, external companies and internal members to promote marketing activities.'
-		},
-		{
-			'employer':'John Lewis PLC',
-			'title': 'Chronicle Assistant',
+			'title': 'Assistant Editor & PR & Marketing Assistant',
 			'location': 'Greenhithe, Kent, UK',
 			'dates': 'October 2009 - March 2011',
-			'description': 'Produced content and designed the layout for a weekly, multi award-winning staff magazine.'
-		}
+			'description': '<ul class="job-desc"><li>Produced content and designed the layout for a weekly, multi award-winning staff magazine;</li><li>Liaised with local press, external companies and internal staff to promote marketing activities. Also organised and managed live chef demonstrations with Waitrose.</li></ul>'
+		},
 	],
 
 	'display': function () {

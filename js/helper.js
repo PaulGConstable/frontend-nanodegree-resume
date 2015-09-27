@@ -16,12 +16,12 @@ var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span class="white-text"><br/>%data%</span>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="white-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><a href="#" class="zocial-twitter social-a"></a></li>';
-var HTMLgithub = '<li class="flex-item"><a href="#" class="zocial-github social-a"></a></li>';
-var HTMLlinkedin = '<li class="flex-item"><a href="#" class="zocial-linkedin social-a"></a></li>';
+var HTMLtwitter = '<li class="flex-item-social"><a href="https://twitter.com/paulgconstable" class="zocial-twitter social-a"></a></li>';
+var HTMLgithub = '<li class="flex-item-social"><a href="https://github.com/paulgconstable" class="zocial-github social-a"></a></li>';
+var HTMLlinkedin = '<li class="flex-item-social"><a href="https://www.linkedin.com/in/paulgconstable" class="zocial-linkedin social-a"></a></li>';
 var HTMLmobile = '<li class="flex-item"><span class="white-text">mobile:</span><span class="white-text">%data%;</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="white-text">email:</span><span class="white-text">%data%</span></li>';
-// var HTMLblog = '<li class="flex-item"><span class="white-text">blog</span><span class="white-text">%data%</span></li>';
+var HTMLemail = '<li class="flex-item"><a href="mailto:paulgconstable@btinternet.com" class="white-text-a">%data%;</a></li>';
+var HTMLPortfolio = '<li class="flex-item"><a href="http://paulgconstable.github.io/" class="white-text-a">http://paulgconstable.github.io/</a></li>';
 // var HTMLlocation = '<li class="flex-item"><span class="white-text">location</span><span class="white-text">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';

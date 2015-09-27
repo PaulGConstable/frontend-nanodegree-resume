@@ -150,18 +150,24 @@ p {
   line-height: 21px;
 }
 
+.job-desc {
+  font-size: 14px;
+  color: #333;
+  line-height: 21px;
+  list-style-type: disc;
+}
+
+
 a {
   color: #1199c3;
   text-decoration: none;
-  margin-top: 10px;
   display: block;
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   color: #f3f3f3;
-  line-height: 28px;
+  line-height: 21px;
 }
 
 .skills-h3 {
@@ -177,7 +183,17 @@ a {
 }
 
 .white-text {
+  color: #fff;
+  margin-bottom: 0.5em;
+}
 
+.white-text-a {
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+
+.white-text-a:hover {
+  text-decoration: underline;
   color: #fff;
 }
 
@@ -208,15 +224,19 @@ a {
   text-align: center;
 }
 
+.flex-item-social {
+  padding: 0.5em;
+}
+
 .flex-box {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 10px;
-  padding-bottom: 2%;
-  justify-content: center;
+  padding: 10px;  justify-content: space-around;
 }
+
+
 
 .center-content {
   padding: 2.5% 5%;
@@ -258,6 +278,7 @@ span {
   padding-bottom: 3%;
 }
 
+
 [class*="zocial-"]:before {
   color: #fff;
   display: inline-block;
@@ -267,6 +288,7 @@ span {
   text-align: center;
   border-radius: 50%;
   border: 2px solid #fff;
+
 }
 
 .social-a:hover {
